@@ -1,0 +1,10 @@
+.video-container {
+    display: flex;
+    gap: 10px;
+  }
+  video {
+    width: 17%;
+    height: 193px;
+    border: 1px solid black;
+  }
+     

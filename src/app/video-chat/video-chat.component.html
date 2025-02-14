@@ -1,0 +1,18 @@
+<div style="display: flex; gap: 10px;">
+    <!-- Local Video (Your Webcam) -->
+    <video #myVideo autoplay playsinline style="    width: 17%; height: 193px; margin-left: 400px;
+    margin-top: 141px; border: 1px solid black;"></video>
+  
+    <!-- Remote Video (Other User's Webcam) -->
+    <video #remoteVideo autoplay playsinline style="width: 17%; height: 193px;margin-top: 141px; border: 1px solid black;"></video>
+  </div>
+  
+  <!-- Input for Remote Peer ID -->
+  <div style="margin-top: 10px;margin-left: 411px;">
+    <input type="text" [(ngModel)]="remotePeerId" placeholder="Enter remote peer ID" />
+    <button (click)="callPeer()">Call</button>
+  </div>
+  
+  <!-- Display Your Peer ID -->
+  <p style="margin-left: 411px;">Your Peer ID: <strong>{{ peerId || 'Generating...' }}</strong></p>
+  
